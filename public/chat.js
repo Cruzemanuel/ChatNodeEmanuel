@@ -1,4 +1,6 @@
-var socket = io.connect('http://localhost:4000');
+// ✅ LÍNEA CORREGIDA - funciona en producción
+var socket = io();
+
 var persona = document.getElementById('persona'),
     appChat = document.getElementById('app-chat'),
     panelBienvenida = document.getElementById('panel-bienvenida'),
